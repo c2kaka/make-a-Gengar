@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.codeWrapper{
+    flex: 1;
+    height: 40%;
+    padding: 10px;
+}
+
+.code{
+    height: 100%;
+    overflow: hidden;
+}
+
+.previewWrapper{
+    flex: 1;
+    height: 60%;
+}
+
+.preview{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gengar{
+    height: 200px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
