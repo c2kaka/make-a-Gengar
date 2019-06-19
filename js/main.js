@@ -19,8 +19,6 @@ void function () {
  * 接下来，画耿鬼的左耳朵
  */
 .ear-left{
-    width: 0;
-    height: 0;
     border-left: 47px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 119px solid #706698;
@@ -32,8 +30,6 @@ void function () {
 
 .ear-left:after{
     content: "";
-    width: 0;
-    height: 0;
     border-left: 47px solid transparent;
     border-right: 58px solid transparent;
     border-bottom: 82px solid #706698;
@@ -47,8 +43,6 @@ void function () {
  * 接下来，画耿鬼的头发
  */
 .hair-middle{
-    width: 0;
-    height: 0;
     border-left: 47px solid transparent;
     border-right: 88px solid transparent;
     border-bottom: 54px solid #706698;
@@ -60,8 +54,6 @@ void function () {
 
 .hair-middle:before{
     content: "";
-    width: 0;
-    height: 0;
     border-left: 47px solid transparent;
     border-right: 88px solid transparent;
     border-bottom: 54px solid #706698;
@@ -73,8 +65,6 @@ void function () {
 
 .hair-middle:after{
     content: "";
-    width: 0;
-    height: 0;
     border-left: 47px solid transparent;
     border-right: 88px solid transparent;
     border-bottom: 66px solid #706698;
@@ -88,8 +78,6 @@ void function () {
  * 接下来，画耿鬼的右耳朵
  */
 .ear-right{
-    width: 0;
-    height: 0;
     border-left: 72px solid transparent;
     border-right: 111px solid transparent;
     border-bottom: 91px solid #706698;
@@ -149,8 +137,6 @@ void function () {
  */
 .finger-left-top{
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 29px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 17px solid #706698;
@@ -161,8 +147,6 @@ void function () {
 
 .finger-left-middle{
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 15px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 17px solid #706698;
@@ -173,8 +157,6 @@ void function () {
 
 .finger-left-bottom{
     position: absolute;
-    width: 0;
-    height: 0;
     border-left: 12px solid transparent;
     border-right: 18px solid transparent;
     border-bottom: 8px solid #706698;
@@ -226,8 +208,6 @@ void function () {
  */
 .finger-right-top{
     position: absolute;
-    width: 0;
-    height: 0;
     top: -1px;
     right: -18px;
     border-left: 14px solid transparent;
@@ -238,8 +218,6 @@ void function () {
 
 .finger-right-middle{
     position: absolute;
-    width: 0;
-    height: 0;
     top: 11px;
     right: -25px;
     border-left: 14px solid transparent;
@@ -250,8 +228,6 @@ void function () {
 
 .finger-right-bottom{
     position: absolute;
-    width: 0;
-    height: 0;
     top: 25px;
     right: -16px;
     border-left: 15px solid transparent;
@@ -399,7 +375,6 @@ void function () {
 .tooth-left:after{
     content: "";
     position: absolute;
-    width: 0px;
     height: 45px;
     bottom: -9px;
     left: 37px;
@@ -431,33 +406,6 @@ void function () {
 }
 
 /*
- * 接下来，画耿鬼的尾巴
- */
-.tail{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 42px solid transparent;
-    border-bottom: 44px solid #706698;
-    bottom: -18px;
-    left: 116px;
-    transform: rotate(42deg);
-}
-
-.tail:after{
-    content: "";
-    width: 62px;
-    height: 21px;
-    background: #706698;
-    position: absolute;
-    bottom: -55px;
-    left: -20px;
-    border-radius: 50%;
-    transform: rotate(-2deg);
-}
-
-/*
  * 接下来，画耿鬼的小脚
  */
 .footer{
@@ -480,52 +428,6 @@ void function () {
     border-radius: 50%;
     transform: rotate(-23deg);
     position: relative;
-}
-
-.foot-left .foot{
-    position: absolute;
-    top: 45px;
-    left: 32px;
-    width: 70px;
-    height: 86px;
-    background: #706698;
-    border-radius: 45%;
-}
-
-.finger-foot-left{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 17px solid transparent;
-    border-right: 44px solid transparent;
-    border-bottom: 51px solid #706698;
-    bottom: 0;
-    left: 3px;
-    transform: rotate(65deg);
-}
-
-.finger-foot-middle{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 17px solid transparent;
-    border-right: 44px solid transparent;
-    border-bottom: 51px solid #706698;
-    bottom: 3px;
-    left: 12px;
-    transform: rotate(55deg);
-}
-
-.finger-foot-right{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 17px solid transparent;
-    border-right: 44px solid transparent;
-    border-bottom: 51px solid #706698;
-    bottom: 3px;
-    left: 27px;
-    transform: rotate(55deg);
 }
 
 /*
@@ -570,7 +472,7 @@ void function () {
         let n=0;
         let id=setInterval(()=>{
             n+=1;
-            container.innerHTML=Prism.highlight(code.substring(0,n),Prism.languages.css);
+            container.innerHTML=code.substring(0,n);
             styleTag.innerHTML=code.substring(0,n);
             container.scrollTop=container.scrollHeight;
             if(n>=code.length){
